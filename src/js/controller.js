@@ -35,6 +35,9 @@ const controlRecipe = async function () {
     recipeView.renderError();
   }
 };
+function party() {
+  console.log('Party time');
+}
 
 const controlSearchResults = async function () {
   try {
@@ -133,6 +136,7 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addhandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  party();
 };
 
 init();
